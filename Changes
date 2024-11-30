@@ -1,6 +1,8 @@
 Revision history for SOAP::Client
 
 {{$NEXT}}
+
+1.1  2024-11-30T20:29:05+01:00
     - Use modern file extensions
     - Add CI badge for each OS
     - Initial version with a Changes file
