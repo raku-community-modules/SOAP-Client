@@ -1,0 +1,6 @@
+Revision history for SOAP::Client
+
+{{$NEXT}}
+    - Use modern file extensions
+    - Add CI badge for each OS
+    - Initial version with a Changes file

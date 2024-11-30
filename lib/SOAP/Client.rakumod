@@ -107,3 +107,40 @@ sub p6-to-xml($p6) {
     }
     return @ret;
 }
+
+=begin pod
+
+=head1 NAME
+
+SOAP::Client - Quick and dirty SOAP client
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+
+use SOAP::Client;
+
+my $temp = SOAP::Client.new('https://www.w3schools.com/xml/tempconvert.asmx?WSDL');
+say $temp.call('CelsiusToFahrenheit', Celsius => 100);
+
+=end code
+
+=head1 DESCRIPTION
+
+Warning: This library currently only supports the simplest of SOAP calls.
+
+=head1 AUTHOR
+
+Andrew Egeler
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2015- 2017 Andrew Egeler
+
+Copyright 2018 - 2024 Raku Community
+
+Licensed under the MIT license.
+
+=end pod
+
+# vim: expandtab shiftwidth=4

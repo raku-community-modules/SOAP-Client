@@ -1,8 +1,7 @@
-use v6;
 use Test;
-plan 3;
-
 use SOAP::Client;
+
+plan 3;
 
 try require IO::Socket::SSL;
 if $! {
@@ -18,3 +17,5 @@ ok $temp, "Got a SOAP::Client object for ConvertTemperature";
 my $result = $temp.call('CelsiusToFahrenheit', Celsius => 100);
 ok $result, "Got a result for a temperature conversion";
 is $result<CelsiusToFahrenheitResult>, 212, "Got correct result";
+
+# vim: expandtab shiftwidth=4

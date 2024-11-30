@@ -1,14 +1,31 @@
 {
-    "raku" : "6.*",
-    "name" : "SOAP::Client",
-    "version" : "1.0.1",
-    "auth" : "zef:raku-community-modules",
-    "authors": ["Andrew Egeler", "Raku Community"],
-    "description" : "Quick and dirty SOAP client",
-    "depends" : ["XML", "LWP::Simple"],
-    "provides" : {
-        "SOAP::Client::WSDL" : "lib/SOAP/Client/WSDL.pm6",
-        "SOAP::Client" : "lib/SOAP/Client.pm6"
-    },
-    "source-url" : "https://github.com/raku-community-modules/SOAP"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Andrew Egeler",
+    "Raku Community"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+    "XML",
+    "LWP::Simple"
+  ],
+  "description": "Quick and dirty SOAP client",
+  "license": "NOASSERTION",
+  "name": "SOAP::Client",
+  "provides": {
+    "SOAP::Client": "lib/SOAP/Client.rakumod",
+    "SOAP::Client::WSDL": "lib/SOAP/Client/WSDL.rakumod"
+  },
+  "raku": "6.*",
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/SOAP-Client.git",
+  "tags": [
+    "SOAP",
+    "CLIENT"
+  ],
+  "test-depends": [
+  ],
+  "version": "1.0.1"
 }
